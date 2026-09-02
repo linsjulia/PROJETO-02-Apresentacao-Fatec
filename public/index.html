@@ -1,14 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Nome da FATEC;
+Nome do curso;
+Identificação do semestre;
+Breve apresentação do curso;
+Uma ou mais imagens relacionadas à FATEC, ao curso ou à área de tecnologia;
+Menu de navegação para acesso às disciplinas;
+Links para as páginas das disciplinas do 3º semestre;
+Outras informações que a dupla considerar relevantes. -->
 
+    <header class="header-index">
+      <div class="header-container">
+        <a href="/" class="a-logo">
+          <img
+            src="./img/fatec-logo.svg"
+            class="logo-fatec-header"
+            alt="Logo Fatec"
+          />
+        </a>
+        <nav>
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#dsm">DSM</a>
+          <a href="#disciplina">Matriz Curricular</a>
+        </nav>
+      </div>
+    </header>
 
+    <section class="hero-section" id="inicio">
+      <div class="hero-index">
+        <div class="hero-index2">
+          <img src="./img/logo-fatec-2.png" class="logo-fatec-section" />
+          <div>
+            <h1 class="h1-index">
+              Desenvolvimento de Software Multiplataforma
+            </h1>
+          </div>
+          <img src="./img/stars.svg" class="stars" />
+        </div>
 
-    
-</body>
+        <div class="hero-index-img">
+          <img src="./img/fatec-diadema-predio.jpg" class="img-fatec" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="about-subsection">
+        <div class="about-title">
+          <img src="./img/graduation-hat.png" />
+          <h1>Sobre a Fatec Luigi Papaiz</h1>
+        </div>
+
+        <div class="about-description">
+          <p>
+            A Fatec Diadema é uma instituição pública de ensino superior
+            localizada em Diadema, São Paulo, que oferece cursos tecnológicos
+            voltados às necessidades do mercado de trabalho. <br /><br />
+            A faculdade tem como objetivo proporcionar uma formação prática e de
+            qualidade, preparando os estudantes para atuar em diferentes áreas
+            profissionais, como nas áreas de tecnologia, gestão e indústria.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-section-img">
+        <img src="./img/docentes-alunos-fatec.png" class="img-docentes" />
+      </div>
+    </section>
+
+    <section class="dsm-section" id="dsm">
+      <div class="dsm-description">
+        <h1>Desenvolvimento de Software Multiplataforma</h1>
+        <p>
+          Um dos cursos fornecidos pela Fatec que tem como perfil o profissional
+          que projeta, desenvolve e testa software para múltiplas plataformas
+        </p>
+      </div>
+
+      <div class="dsm-cards">
+        <div class="dsm-card dev">
+          <div class="dsm-subcard dev">
+            <h2>DESENVOLVE APLICAÇÕES UTILIZANDO:</h2>
+            <div class="card-description dev">
+              <div class="card-line"></div>
+              <div class="container-icon">
+                <img src="./img/cloud.png" />
+                <h3>Nuvem e Internet das Coisas</h3>
+              </div>
+
+              <div class="container-icon">
+                <img src="./img/cod.png" />
+                <h3>Métodos e Tecnologias de Linguagens de Programação</h3>
+              </div>
+
+              <div class="container-icon">
+                <img src="./img/bd.png" />
+                <h3>Banco de Dados</h3>
+              </div>
+
+              <div class="container-icon">
+                <img src="./img/software.png" />
+                <h3>Engenharia de Software</h3>
+              </div>
+
+              <div class="container-icon">
+                <img src="./img/security.png" />
+                <h3>Segurança da Informação</h3>
+              </div>
+
+              <div class="container-icon">
+                <img src="./img/ia.png" />
+                <h3>Inteligência Artificial</h3>
+              </div>
+            </div>
+          </div>
+          <img src="./img/developer.jpg" class="img-card" />
+        </div>
+
+        <div class="dsm-card info">
+          <div class="dsm-subcard info">
+            <h2>O CURSO FORNECE:</h2>
+            <div class="card-description info">
+              <div class="card-line"></div>
+              <h3>Duração de <span>6 semestres</span></h3>
+              <h3><span>40 vagas</span> no turno matutino</h3>
+              <h3>6 Microcertificações e 3 Certificações Intermediárias</h3>
+            </div>
+          </div>
+          <img src="./img/estudantes.jpg" class="img-card students" />
+        </div>
+      </div>
+    </section>
+
+    <section class="subjects-section" id="disciplina">
+      <h1>Matriz Curricular</h1>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 30px;
+        "
+      >
+        <h2 class="subtitle1">
+          PARA MAIS INFORMAÇÕES, CLIQUE NAS DISCIPLINAS:
+        </h2>
+        <div>
+          <div class="subjects-card">
+            <div class="subtitle2-container">
+              <h2 class="subtitle2">3° Semestre</h2>
+            </div>
+
+            <div class="container-link-subjects">
+              <div class="link-subjects">
+                <a href="/algebra">Algebra Linear</a>
+                <a href="/banco-dados"> Banco de Dados Não Relacional</a>
+                <a href="/dev-web">Desenvolvimento Web III</a>
+                <a href="/gestao-agil">Gestão Ágil de Projetos de Software</a>
+              </div>
+
+              <div class="link-subjects">
+                <a href="/ingles">Inglês I</a>
+                <a href="/ihc">Interação Humano-Computador</a>
+                <a href="/tec-programacao">Técnicas de Programação II</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="button-subject" href="/disciplinaspdf"
+          >Matriz Curricular Completa</a
+        >
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
 </html>
