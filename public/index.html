@@ -3,19 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Nome da FATEC;
-Nome do curso;
-Identificação do semestre;
-Breve apresentação do curso;
-Uma ou mais imagens relacionadas à FATEC, ao curso ou à área de tecnologia;
-Menu de navegação para acesso às disciplinas;
-Links para as páginas das disciplinas do 3º semestre;
-Outras informações que a dupla considerar relevantes. -->
-
     <header class="header-index">
       <div class="header-container">
         <a href="/" class="a-logo">
@@ -34,7 +25,7 @@ Outras informações que a dupla considerar relevantes. -->
       </div>
     </header>
 
-    <section class="hero-section" id="inicio">
+    <section class="hero-section reveal" id="inicio">
       <div class="hero-index">
         <div class="hero-index2">
           <img src="./img/logo-fatec-2.png" class="logo-fatec-section" />
@@ -47,18 +38,18 @@ Outras informações que a dupla considerar relevantes. -->
         </div>
 
         <div class="hero-index-img">
-          <img src="./img/fatec-diadema-predio.jpg" class="img-fatec" />
+          <img id="hero-image" src="" class="img-fatec" />
         </div>
       </div>
     </section>
 
-    <section class="about-section" id="sobre">
-      <div class="about-subsection">
-        <div class="about-title">
-          <img src="./img/graduation-hat.png" />
-          <h1>Sobre a Fatec Luigi Papaiz</h1>
-        </div>
+    <section class="about-section reveal" id="sobre">
+      <div class="about-title">
+        <img src="./img/graduation-hat.png" />
+        <h1>Sobre a Fatec Luigi Papaiz</h1>
+      </div>
 
+      <div class="about-subsection">
         <div class="about-description">
           <p>
             A Fatec Diadema é uma instituição pública de ensino superior
@@ -67,16 +58,20 @@ Outras informações que a dupla considerar relevantes. -->
             A faculdade tem como objetivo proporcionar uma formação prática e de
             qualidade, preparando os estudantes para atuar em diferentes áreas
             profissionais, como nas áreas de tecnologia, gestão e indústria.
+            <br /><br />
+            A faculdade proporciona um ambiente preparado a seus diferentes
+            cursos, como laboratórios de computadores e laboratórios de química,
+            que são devidamente equipados e seguros para a realização das aulas.
           </p>
         </div>
-      </div>
 
-      <div class="about-section-img">
-        <img src="./img/docentes-alunos-fatec.png" class="img-docentes" />
+        <div class="about-section-img">
+          <img src="./img/docentes-alunos-fatec.png" class="img-docentes" />
+        </div>
       </div>
     </section>
 
-    <section class="dsm-section" id="dsm">
+    <section class="dsm-section reveal" id="dsm">
       <div class="dsm-description">
         <h1>Desenvolvimento de Software Multiplataforma</h1>
         <p>
@@ -135,25 +130,26 @@ Outras informações que a dupla considerar relevantes. -->
               <h3>6 Microcertificações e 3 Certificações Intermediárias</h3>
             </div>
           </div>
-          <img src="./img/estudantes.jpg" class="img-card students" />
+          <img src="./img/computadores.jpg" class="img-card students" />
         </div>
       </div>
     </section>
 
-    <section class="subjects-section" id="disciplina">
-      <h1>Matriz Curricular</h1>
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          gap: 30px;
-        "
-      >
-        <h2 class="subtitle1">
-          PARA MAIS INFORMAÇÕES, CLIQUE NAS DISCIPLINAS:
-        </h2>
-        <div>
+    <section class="subjects-section reveal" id="disciplina">
+
+        <h1>Matriz Curricular</h1>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+          "
+        >
+          <h2 class="subtitle1">
+            PARA MAIS INFORMAÇÕES, CLIQUE NAS DISCIPLINAS:
+          </h2>
+
           <div class="subjects-card">
             <div class="subtitle2-container">
               <h2 class="subtitle2">3° Semestre</h2>
@@ -174,13 +170,17 @@ Outras informações que a dupla considerar relevantes. -->
               </div>
             </div>
           </div>
+
+          <a class="button-subject" href="/disciplinaspdf"
+            >Matriz Curricular Completa</a
+          >
         </div>
-        <a class="button-subject" href="/disciplinaspdf"
-          >Matriz Curricular Completa</a
-        >
-      </div>
+
     </section>
 
-    <footer></footer>
+    <footer id="footer"></footer>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/scrollReveal.js"></script>
+    <script src="./js/loadComponents.js"></script>
   </body>
 </html>

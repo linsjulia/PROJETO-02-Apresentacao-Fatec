@@ -19,6 +19,7 @@ const content_type = {
     '.js': 'text/javascript; charset=utf-8',
     '.json': 'application/json; charset=utf-8',
     '.jpeg': 'image/jpeg',
+    '.jpg': 'image/jpg',
     '.png': 'image/png',
     '.pdf': 'application/pdf',
     '.mp4': 'video/mp4',
@@ -47,7 +48,7 @@ function readFile(response, file){
             response.writeHead(404, {'Content-Type':'text/html; charset=utf-8'});
 
             return fs.createReadStream(
-                path.join(publicDir, 'erro404.html')
+                path.join(publicDir, 'erro.html')
             ).pipe(response);
         }
 
@@ -81,5 +82,5 @@ var callback = function(request, response){
 
 // Servidor - Cria e Configura:
 var server = http.createServer(callback);
-server.listen(3000);
+server.listen(3000, '0.0.0.0');
 console.log('Servidor iniciando em http://localhost:3000');
